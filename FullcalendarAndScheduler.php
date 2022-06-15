@@ -44,7 +44,7 @@ class FullcalendarAndScheduler extends \yii\base\Widget
 	public $header = [
 		'center' => 'title',
 		'left'   => 'prev,next, today',
-		'right'  => 'agendaDay,agendaWeek,month',
+		'right'  => 'resourceTimelineDay,timeGridWeek,dayGridMonth',
 	];
 	/** @var string  Text to display while the calendar is loading */
 	public $loading = 'Please wait, calendar is loading';
@@ -54,6 +54,13 @@ class FullcalendarAndScheduler extends \yii\base\Widget
 	public $options = [
 		'id'    => 'calendar',
 		'class' => 'fullcalendar',
+        'initialDate'=>'2020-09-07',
+        'editable'=>true,
+         'selectable'=>true,
+         'nowIndicator'=>true,
+         'aspectRatio'=>1.8,
+         'scrollTime'=>'00:00',
+        'schedulerLicenseKey'=> 'CC-Attribution-NonCommercial-NoDerivatives',
 	];
 	/**
 	 * @var boolean  Whether or not we need to include the ThemeAsset bundle
@@ -84,20 +91,20 @@ class FullcalendarAndScheduler extends \yii\base\Widget
 
 		$assets = CoreAsset::register($this->view);
 
-		if ($this->theme === true) { // Register the theme
-			ThemeAsset::register($this->view);
-		}
 
 		if (isset($this->options['language'])) {
 			$assets->language = $this->options['language'];
 		}
 
 		$assets->googleCalendar = $this->googleCalendar;
-		$this->clientOptions['header'] = $this->header;
+		$this->clientOptions['headerToolbar'] = $this->header;
 
-		$this->view->registerJs(implode("\n", [
-			"jQuery('#{$this->options['id']}').fullCalendar({$this->getClientOptions()});",
-		]), \yii\web\View::POS_READY);
+		$this->view->registerJs("
+			
+			    var calendarEl = document.getElementById('{$this->options['id']}');
+			    var calendar = new FullCalendar.Calendar(calendarEl, {$this->getClientOptions()});
+			    calendar.render();
+			", \yii\web\View::POS_READY);
 	}
 
 	/**
