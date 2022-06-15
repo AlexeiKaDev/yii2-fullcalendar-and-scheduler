@@ -41,7 +41,7 @@ class CoreAsset extends \yii\web\AssetBundle
     /** @var  string Language for the fullcalendar */
     public $language = null;
     /** @var  string Location of the fullcalendar distribution */
-    public $sourcePath = '/dist/';
+    public $sourcePath = '@vendor/alexeikadev/yii2-fullcalendar-and-scheduler/dist';
 
     /**
      * @inheritdoc
