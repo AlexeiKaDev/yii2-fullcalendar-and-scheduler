@@ -1,10 +1,10 @@
 <?php
 
-namespace alexeikadev\fullcalendarAndScheduler;
+namespace alexeikadev\yii2FullcalendarAndScheduler;
 
 /**
  * Class Fullcalendar
- * @package alexeikadev\fullcalendarAndScheduler
+ * @package alexeikadev\yii2FullcalendarAndScheduler
  */
 class FullcalendarAndScheduler extends \yii\base\Widget
 {
