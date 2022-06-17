@@ -17,13 +17,9 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "alexeikadev\\fullcalendarAndScheduler\\": ""
+            "alexeikadev\\fullcalendarAndScheduler\\": "1.0.1"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.1-dev"
-        }
-    }
+
    
 }
