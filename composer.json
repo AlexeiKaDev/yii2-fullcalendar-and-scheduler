@@ -1,5 +1,5 @@
 {
-    "name": "alexeikadev/yii2-fullcalendar-and-scheduler",
+     "name": "alexeikadev/yii2-fullcalendar-and-scheduler",
     "description": "Calendar and Scheduller module (based on fullcalendar.io) ",
     "type": "yii2-extension",
     "version": "v1.0.0",
@@ -21,6 +21,5 @@
         }
     },
     "prefer-stable": true
-
    
 }
