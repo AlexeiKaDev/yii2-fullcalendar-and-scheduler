@@ -2,7 +2,7 @@
     "name": "alexeikadev/yii2-fullcalendar-and-scheduler",
     "description": "Calendar and Scheduller module (based on fullcalendar.io) ",
     "type": "yii2-extension",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "keywords": ["yii2","extension"],
     "license": "MIT",
     "authors": [
