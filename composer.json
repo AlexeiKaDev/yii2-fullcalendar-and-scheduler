@@ -19,7 +19,8 @@
         "psr-4": {
             "alexeikadev\\fullcalendarAndScheduler\\": "1.0.1"
         }
-    }
+    },
+    "prefer-stable": true
 
    
 }
