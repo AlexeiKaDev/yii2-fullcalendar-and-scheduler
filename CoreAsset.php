@@ -1,6 +1,6 @@
 <?php
 
-namespace alexeikadev\fullcalendarAndScheduler;
+namespace alexeikadev\yii2FullcalendarAndScheduler;
 
 /**
  * Class CoreAsset
