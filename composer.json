@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "alexeikadev\\fullcalendarAndScheduler\\": "1.0.1"
+            "alexeikadev\\yii2FullcalendarAndScheduler\\": ""
         }
     },
     "prefer-stable": true
